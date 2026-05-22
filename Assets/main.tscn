@@ -1044,6 +1044,7 @@ script = ExtResource("6_gco83")
 [node name="Fox2" parent="." instance=ExtResource("7_gco83")]
 position = Vector2(271, -251)
 script = ExtResource("9_8s3iw")
+speed = 130.0
 
 [node name="Timer2" type="Timer" parent="Fox2"]
 

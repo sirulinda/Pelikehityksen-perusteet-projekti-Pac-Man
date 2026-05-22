@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cbo0sdqlnua0g"]
+[gd_scene load_steps=2 format=3 uid="uid://cbo0sdqlnua0g"]
+
+[ext_resource type="Script" uid="uid://dykvv4r41rh8t" path="res://Scenes/game_over.gd" id="1_ojehl"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ojehl")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -40,3 +43,5 @@ text = "GAME OVER"
 layout_mode = 2
 theme_override_font_sizes/font_size = 38
 text = "TRY AGAIN"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
