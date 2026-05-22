@@ -259,7 +259,7 @@ pattern_6 = SubResource("TileMapPattern_1gkq6")
 pattern_7 = SubResource("TileMapPattern_hgiwf")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8s3iw"]
-radius = 33.37664
+radius = 3.0
 
 [node name="main" type="Node"]
 
@@ -1048,14 +1048,13 @@ script = ExtResource("9_8s3iw")
 [node name="Timer2" type="Timer" parent="Fox2"]
 
 [node name="Sprite2D2" type="Sprite2D" parent="Fox2"]
-position = Vector2(4.0000076, -3.0000057)
+position = Vector2(1.7500076, -2.5000057)
 scale = Vector2(1.5156256, 1.4687502)
 texture = ExtResource("9_1gkq6")
 
 [node name="Tappoalue" type="Area2D" parent="Fox2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fox2/Tappoalue"]
-position = Vector2(1, 2)
 shape = SubResource("CircleShape2D_8s3iw")
 
 [node name="NavigationAgent2D2" type="NavigationAgent2D" parent="Fox2"]
