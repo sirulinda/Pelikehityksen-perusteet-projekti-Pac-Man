@@ -1,19 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://bhsy57crx4waq"]
 
-[ext_resource type="Texture2D" uid="uid://dse5pm8vl73nu" path="res://Assets/Hedgehog/hedgehog1.png" id="1_8syjs"]
 [ext_resource type="Script" uid="uid://bsa42pm2mlke1" path="res://hedgehog.gd" id="1_dm456"]
+[ext_resource type="Texture2D" uid="uid://dvs1lp3y4w43f" path="res://Assets/Hedgehog/hedgehog2 (2).png" id="2_dm456"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dm456"]
-radius = 21.0
+radius = 80.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dm456")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, 1)
-scale = Vector2(2.01, 1.9852941)
-texture = ExtResource("1_8syjs")
+position = Vector2(-1, -3)
+scale = Vector2(0.78128904, 0.905848)
+texture = ExtResource("2_dm456")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 3)
+position = Vector2(2, -1)
+scale = Vector2(0.3, 0.3)
 shape = SubResource("CircleShape2D_dm456")
